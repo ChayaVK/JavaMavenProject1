@@ -3,6 +3,7 @@
     <test name="Open Browser Test">
         <classes>
             <class name="tests.OpenBrowserTest"/>
+            <class name="tests.OpenBrowserInFireFox"/>
         </classes>
     </test>
 </suite>
