@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-26T17:39:35 IST" name="Open Browser Suite" finished-at="2025-11-26T17:39:40 IST" duration-ms="5363">
+  <suite started-at="2025-11-26T18:15:35 IST" name="Default suite" finished-at="2025-11-26T18:15:47 IST" duration-ms="12114">
     <groups>
     </groups>
-    <test started-at="2025-11-26T17:39:35 IST" name="Open Browser Test" finished-at="2025-11-26T17:39:40 IST" duration-ms="5363">
-      <class name="tests.OpenBrowserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OpenBrowserTest@4c583ecf]" started-at="2025-11-26T17:39:35 IST" name="setUp" finished-at="2025-11-26T17:39:37 IST" duration-ms="2739" status="PASS">
+    <test started-at="2025-11-26T18:15:35 IST" name="Default test" finished-at="2025-11-26T18:15:47 IST" duration-ms="12114">
+      <class name="tests.OpenBrowserInFireFox">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OpenBrowserInFireFox@4c583ecf]" started-at="2025-11-26T18:15:35 IST" name="setUp" finished-at="2025-11-26T18:15:44 IST" duration-ms="8382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openBrowserTest()[pri:0, instance:tests.OpenBrowserTest@4c583ecf]" started-at="2025-11-26T17:39:37 IST" name="openBrowserTest" finished-at="2025-11-26T17:39:40 IST" duration-ms="2273" status="PASS">
+        <test-method signature="openBrowserTest()[pri:0, instance:tests.OpenBrowserInFireFox@4c583ecf]" started-at="2025-11-26T18:15:44 IST" name="openBrowserTest" finished-at="2025-11-26T18:15:45 IST" duration-ms="1681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenBrowserTest@4c583ecf]" started-at="2025-11-26T17:39:40 IST" name="tearDown" finished-at="2025-11-26T17:39:40 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenBrowserInFireFox@4c583ecf]" started-at="2025-11-26T18:15:45 IST" name="tearDown" finished-at="2025-11-26T18:15:47 IST" duration-ms="1958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.OpenBrowserTest -->
-    </test> <!-- Open Browser Test -->
-  </suite> <!-- Open Browser Suite -->
+      </class> <!-- tests.OpenBrowserInFireFox -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
