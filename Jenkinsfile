@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'Maven'           // Define Maven tool name from Jenkins global config
-        jdk   'JDK21'           // Define JDK version installed in Jenkins
+        jdk   'JDK25'           // Define JDK version installed in Jenkins
     }
 
     environment {
