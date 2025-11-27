@@ -1,5 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Open Browser Suite">
+    <listeners>
+        <!-- Allure Listener -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
     <test name="Open Browser Test">
         <classes>
             <class name="tests.OpenBrowserTest"/>
