@@ -36,12 +36,12 @@ pipeline {
             }
         }
 
-        // ---- OPTIONAL: Allure Reporting ----
-        // stage('Allure Report') {
-        //     steps {
-        //         allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
-        //     }
-        // }
+        
+        stage('Allure Report') {
+            steps {
+               allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
+          }
+        }
 
     }
 
