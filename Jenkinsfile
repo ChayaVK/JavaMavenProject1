@@ -19,20 +19,13 @@ pipeline {
 
         stage('Install Dependencies & Build') {
             steps {
-                bat 'mvn clean install -DskipTests'
+                bat 'mvn clean install'
             }
         }
 
         stage('Run Selenium TestNG Tests') {
             steps {
                 bat 'mvn test'
-            }
-        }
-
-        stage('Archive Test Results') {
-            steps {
-                junit 'target/surefire-reports/*.xml'     // TestNG XML results
-                archiveArtifacts artifacts: 'target/**/*.html', allowEmptyArchive: true
             }
         }
 
