@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 public class ScreenshotUtil {
     public String captureScreenshot(WebDriver driver, String screenshotName) throws Exception {
@@ -13,7 +14,11 @@ public class ScreenshotUtil {
         File source = ts.getScreenshotAs(OutputType.FILE);
         String dest = "screenshots/" + screenshotName + ".png";
         Files.createDirectories(Paths.get("screenshots")); // ensure folder exists
-        Files.copy(source.toPath(), Paths.get(dest));
+        
+        
+        Files.copy(source.toPath(),
+                Paths.get("screenshots", "testFailure.png"),
+                StandardCopyOption.REPLACE_EXISTING);
         System.out.println(dest);
         return dest; // returns the path of the screenshot
     }
