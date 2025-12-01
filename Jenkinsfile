@@ -7,6 +7,7 @@ pipeline {
 
     environment {
         PATH = "$MAVEN_HOME/bin:$PATH"
+        apiToken = credentials('jira_api_token')
     }
 
     stages {

@@ -15,8 +15,16 @@ public class JiraAttachment {
         String jiraUrl = "https://yadavchaya29.atlassian.net/";
         String email = "yadavchaya29@gmail.com";
         ConfigReader config = new ConfigReader();
-        
-        String apiToken = config.getProperty("jira_api_token");
+        String apiToken = null;
+        //String apiToken = config.getProperty("jira_api_token");
+        try 
+        {
+        	apiToken = System.getenv("apiToken");
+        }
+        catch(Exception e)
+        {
+        	apiToken = config.getProperty("jira_api_token");
+        }
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost post = new HttpPost(jiraUrl + "/rest/api/3/issue/" + issueKey + "/attachments");
 
