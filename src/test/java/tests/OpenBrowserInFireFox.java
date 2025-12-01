@@ -18,7 +18,7 @@ public class OpenBrowserInFireFox{
         driver.manage().window().maximize();
     }
 
-   // @Test
+    @Test
     public void openBrowserTest() throws InterruptedException {
         driver.get("https://www.google.com");
         System.out.println("Browser opened successfully!");

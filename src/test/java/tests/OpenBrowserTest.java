@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import Utils.JiraAttachment;
+import Utils.ScreenshotUtil;
 
 public class OpenBrowserTest {
 
@@ -19,9 +21,12 @@ public class OpenBrowserTest {
     }
 
     @Test
-    public void openBrowserTest() throws InterruptedException {
+    public void openBrowserTest() throws Exception {
         driver.get("https://www.google.com");
         System.out.println("Browser opened successfully!");
+        ScreenshotUtil s = new ScreenshotUtil();
+        String screenshotPath = s.captureScreenshot(driver, "testFailure");
+        JiraAttachment.attachScreenshot("SCRUM-4", screenshotPath);
         
     }
 
